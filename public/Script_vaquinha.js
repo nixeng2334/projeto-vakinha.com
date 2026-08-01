@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             try {
               
-                const response = await fetch('http://localhost:3000', {
+                const response = await fetch('https://projeto-vakinha-com.onrender.com/pedidos', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
