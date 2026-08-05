@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             event.preventDefault(); 
 
             
-            const formData = {
+            const dadosFormulario = {
                 paymentMethod: selectedPaymentMethod,
                 payer: {
                     name: document.getElementById("name")?.value || "",
