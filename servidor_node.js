@@ -62,7 +62,7 @@ console.error("Erro ao criar tabela:", err);
 
 criarTabela();
 
-app.post("/pedido", async (req, res) => {
+app.post("/pedidos", async (req, res) => {
 
 try {
 
