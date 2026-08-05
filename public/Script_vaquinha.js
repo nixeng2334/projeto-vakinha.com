@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             
             if (selectedPaymentMethod === "credit_card") {
-                formData.card = {
+                dadosFormulario.card = {
                     number: document.getElementById("cardNumber")?.value || "",
                     expiry: document.getElementById("cardExpiry")?.value || "",
                     cvc: document.getElementById("cardCvc")?.value || "",
