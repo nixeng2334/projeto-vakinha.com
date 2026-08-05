@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             try {
               
-                const response = await fetch('https://projeto-vakinha-com.onrender.com/pedidos', {
+                const response = await fetch('/pedidos', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
