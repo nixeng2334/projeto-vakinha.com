@@ -16,6 +16,9 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/", (req, res) => {
+ res.sendFile(path.join(__dirname, "public", "index.html"));
+
 const ADMIN_USER = process.env.ADMIN_USER || "admin";
 
 const ADMIN_PASS = process.env.ADMIN_PASS || "222328pb";
