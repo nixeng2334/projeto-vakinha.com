@@ -78,7 +78,7 @@ await pool.query(
 
 console.log("Pedido salvo no banco de dados!");
 
-res.status(200).send("Pedido recebido e salvo no banco de dados! Aguarde.");
+res.status(200).json("Pedido recebido e salvo no banco de dados! Aguarde.");
 
 } catch (err) {
 
