@@ -255,7 +255,7 @@
      }
 
      if (value.length > 9) {
-         value = value.replace(/^(\(\d{2}\)\s\d{5})(\d)/,'$1) $2');
+         value = value.replace(/^(\(\d{2}\)\s\d{5})(\d)/,'$1-$2');
      } 
              
     e.target.value = value;
