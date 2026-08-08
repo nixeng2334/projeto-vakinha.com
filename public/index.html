@@ -239,7 +239,7 @@
                            document.querySelectorAll('input')[0];
 
      if (phoneInput) {
-         phoneInput.setAttribute('maxlength', '14');
+         phoneInput.setAttribute('maxlength', '15');
 
          phoneInput.addEventListener('input', function(e) {
 
@@ -254,8 +254,7 @@
          value = value.replace(/^(\(\d{2})(\d)/,'$1) $2');
      }
 
-     if (value.length > 3) {
-         value = value.replace(/^Scope_DDD/, '$1) ');
+     if (value.length > 9) {
          value = value.replace(/^(\(\d{2}\)\s\d{5})(\d)/,'$1) $2');
      } 
              
