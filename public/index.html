@@ -230,6 +230,39 @@
     e.target.value = value;
    });
   }
+
+        const phoneInput = document.getElementById('telefone') ||
+                           document.getElementById('whatsapp') ||
+                           document.querySelector('input[name="telefone"]') ||
+                           document.querySelector('input[name="whatsapp"]') ||
+                           document.querySelector('input[placeholder*="00000"]') ||
+                           document.querySelectorAll('input')[0]; ||
+
+     if (phoneInput) {
+         phoneInput.setAttribute('maxlength', '14');
+
+         phoneInput.addEventListener('input', function(e) {
+
+             let value = e.target.value.replace(/\D/g, '');
+
+     if (value.length > 0) {
+         value = '(' + value;
+     }
+             
+     if (value.length > 3) {
+         value = value.replace(/^Scope_DDD/, '$1) ');
+         value = value.replace(/^(\(\d{2})(\d)/,'$1) $2');
+     }
+
+     if (value.length > 3) {
+         value = value.replace(/^Scope_DDD/, '$1) ');
+         value = value.replace(/^(\(\d{2}\)\s\d{5})(\d)/,'$1) $2');
+     } 
+             
+    e.target.value = value;
+   });
+  }
+    
 });
 </script>
 </script>
