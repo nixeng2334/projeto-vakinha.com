@@ -1,396 +1,127 @@
-> Maria Eduarda:
-html {
-                font-family: "Lato", "Lato Fallback", arial, "Montserrat", "Montserrat Fallback", arial;
-            }
-        
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-
-
-            @keyframes marching-ants {
-                0% {
-                    background-position:
-                        0 0,
-                        0 100%,
-                        0 0,
-                        100% 0;
-                }
-                to {
-                    background-position:
-                        20px 0,
-                        -20px 100%,
-                        0 -20px,
-                        100% 20px;
-                }
-            }
-            :root {
-                --rc-drag-handle-size: 12px;
-                --rc-drag-handle-mobile-size: 24px;
-                --rc-drag-handle-bg-colour: rgba(0, 0, 0, 0.2);
-                --rc-drag-bar-size: 6px;
-                --rc-border-color: rgba(255, 255, 255, 0.7);
-                --rc-focus-color: #0088ff;
-            }
-            .ReactCrop {
-                position: relative;
-                display: inline-block;
-                cursor: crosshair;
-                max-width: 100%;
-            }
-            .ReactCrop *,
-            .ReactCrop *:before,
-            .ReactCrop *:after {
-                box-sizing: border-box;
-            }
-            .ReactCrop--disabled,
-            .ReactCrop--locked {
-                cursor: inherit;
-            }
-            .ReactCrop__child-wrapper {
-                overflow: hidden;
-                max-height: inherit;
-            }
-            .ReactCrop__child-wrapper > img,
-            .ReactCrop__child-wrapper > video {
-                display: block;
-                max-width: 100%;
-                max-height: inherit;
-            }
-            .ReactCrop:not(.ReactCrop--disabled) .ReactCrop__child-wrapper > img,
-            .ReactCrop:not(.ReactCrop--disabled) .ReactCrop__child-wrapper > video {
-                touch-action: none;
-            }
-            .ReactCrop:not(.ReactCrop--disabled) .ReactCrop__crop-selection {
-                touch-action: none;
-            }
-            .ReactCrop__crop-mask {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                pointer-events: none;
-                width: calc(100% + 0.5px);
-                height: calc(100% + 0.5px);
-            }
-            .ReactCrop__crop-selection {
-                position: absolute;
-                top: 0;
-                left: 0;
-                transform: translateZ(0);
-                cursor: move;
-            }
-            .ReactCrop--disabled .ReactCrop__crop-selection {
-                cursor: inherit;
-            }
-            .ReactCrop--circular-crop .ReactCrop__crop-selection {
-                border-radius: 50%;
-            }
-            .ReactCrop--circular-crop .ReactCrop__crop-selection:after {
-                pointer-events: none;
-                content: "";
-                position: absolute;
-                top: -1px;
-                right: -1px;
-                bottom: -1px;
-                left: -1px;
-                border: 1px solid var(--rc-border-color);
-                opacity: 0.3;
-            }
-            .ReactCrop--no-animate .ReactCrop__crop-selection {
-                outline: 1px dashed white;
-            }
-            .ReactCropcrop-selection:not(.ReactCrop--no-animate .ReactCropcrop-selection) {
-                animation: marching-ants 1s;
-                background-image: linear-gradient(to right, #fff 50%, #444 50%),
-                    linear-gradient(to right, #fff 50%, #444 50%), linear-gradient(to bottom, #fff 50%, #444 50%),
-                    linear-gradient(to bottom, #fff 50%, #444 50%);
-                background-size:
-                    10px 1px,
-
-> Maria Eduarda:
-10px 1px,
-                    1px 10px,
-                    1px 10px;
-                background-position:
-                    0 0,
-                    0 100%,
-                    0 0,
-                    100% 0;
-                background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-                color: #fff;
-                animation-play-state: running;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-            .ReactCrop__crop-selection:focus {
-                outline: 2px solid var(--rc-focus-color);
-                outline-offset: -1px;
-            }
-            .ReactCrop--invisible-crop .ReactCrop__crop-mask,
-            .ReactCrop--invisible-crop .ReactCrop__crop-selection {
-                display: none;
-            }
-            .ReactCrop__rule-of-thirds-vt:before,
-            .ReactCrop__rule-of-thirds-vt:after,
-            .ReactCrop__rule-of-thirds-hz:before,
-            .ReactCrop__rule-of-thirds-hz:after {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: #fff6;
-            }
-            .ReactCrop__rule-of-thirds-vt:before,
-            .ReactCrop__rule-of-thirds-vt:after {
-                width: 1px;
-                height: 100%;
-            }
-            .ReactCrop__rule-of-thirds-vt:before {
-                left: 33.3333333333%;
-            }
-            .ReactCrop__rule-of-thirds-vt:after {
-                left: 66.6666666667%;
-            }
-            .ReactCrop__rule-of-thirds-hz:before,
-            .ReactCrop__rule-of-thirds-hz:after {
-                width: 100%;
-                height: 1px;
-            }
-            .ReactCrop__rule-of-thirds-hz:before {
-                top: 33.3333333333%;
-            }
-            .ReactCrop__rule-of-thirds-hz:after {
-                top: 66.6666666667%;
-            }
-            .ReactCrop__drag-handle {
-                position: absolute;
-                width: var(--rc-drag-handle-size);
-                height: var(--rc-drag-handle-size);
-                background-color: var(--rc-drag-handle-bg-colour);
-                border: 1px solid var(--rc-border-color);
-            }
-            .ReactCrop__drag-handle:focus {
-                background: var(--rc-focus-color);
-            }
-            .ReactCrop .ord-nw {
-                top: 0;
-                left: 0;
-                transform: translate(-50%, -50%);
-                cursor: nw-resize;
-            }
-            .ReactCrop .ord-n {
-                top: 0;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                cursor: n-resize;
-            }
-            .ReactCrop .ord-ne {
-                top: 0;
-                right: 0;
-                transform: translate(50%, -50%);
-                cursor: ne-resize;
-            }
-            .ReactCrop .ord-e {
-                top: 50%;
-                right: 0;
-                transform: translate(50%, -50%);
-                cursor: e-resize;
-            }
-            .ReactCrop .ord-se {
-                bottom: 0;
-                right: 0;
-                transform: translate(50%, 50%);
-                cursor: se-resize;
-            }
-            .ReactCrop .ord-s {
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%, 50%);
-                cursor: s-resize;
-            }
-            .ReactCrop .ord-sw {
-                bottom: 0;
-                left: 0;
-                transform: translate(-50%, 50%);
-                cursor: sw-resize;
-            }
-            .ReactCrop .ord-w {
-                top: 50%;
-                left: 0;
-                transform: translate(-50%, -50%);
-                cursor: w-resize;
-
-> Maria Eduarda:
+* {
+    box-sizing: border-box;
 }
-            .ReactCropdisabled .ReactCropdrag-handle {
-                cursor: inherit;
-            }
-            .ReactCrop__drag-bar {
-                position: absolute;
-            }
-            .ReactCrop__drag-bar.ord-n {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: var(--rc-drag-bar-size);
-                transform: translateY(-50%);
-            }
-            .ReactCrop__drag-bar.ord-e {
-                right: 0;
-                top: 0;
-                width: var(--rc-drag-bar-size);
-                height: 100%;
-                transform: translate(50%);
-            }
-            .ReactCrop__drag-bar.ord-s {
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: var(--rc-drag-bar-size);
-                transform: translateY(50%);
-            }
-            .ReactCrop__drag-bar.ord-w {
-                top: 0;
-                left: 0;
-                width: var(--rc-drag-bar-size);
-                height: 100%;
-                transform: translate(-50%);
-            }
-            .ReactCrop--new-crop .ReactCrop__drag-bar,
-            .ReactCrop--new-crop .ReactCrop__drag-handle,
-            .ReactCrop--fixed-aspect .ReactCrop__drag-bar,
-            .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-n,
-            .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-e,
-            .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-s,
-            .ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-w {
-                display: none;
-            }
-            @media (pointer: coarse) {
-                .ReactCrop .ord-n,
-                .ReactCrop .ord-e,
-                .ReactCrop .ord-s,
-                .ReactCrop .ord-w {
-                    display: none;
-                }
-                .ReactCrop__drag-handle {
-                    width: var(--rc-drag-handle-mobile-size);
-                    height: var(--rc-drag-handle-mobile-size);
-                }
-            }
-        
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#_next, body > div, form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Textos e Labels */
+label, p, span {
+    font-size: 13px;
+    color: #4a5568;
+}
+
+label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2d3748;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    border-color: #23cc67;
+}
+
+button[type="button"], 
+input[type="button"] {
+    background-color: #ffffff;
+    color: #23cc67;
+    border: 1.5px solid #23cc67;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #23cc67;
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"], 
+input[type="submit"],
+.btn-submit {
+    width: 100%;
+    background-color: #23cc67;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(35, 204, 103, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover, 
+input[type="submit"]:hover {
+    background-color: #1eb85c;
+}
 
 
-            / ISSUERS /
-            / Images /
-            .rccs {
-                margin: 0 auto;
-                perspective: 1000px;
-                width: 290px;
-            }
-            .rccs__card {
-                height: 182.873px;
-                margin: 0 auto;
-                position: relative;
-                transform-style: preserve-3d;
-                transition: all 0.4s linear;
-                width: 290px;
-            }
-            .rccs__card--front,
-            .rccs__card--back {
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                background: linear-gradient(25deg, #939393, #717171);
-                border-radius: 14.5px;
-                color: #fff;
-                height: 100%;
-                left: 0;
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                transform-style: preserve-3d;
-                width: 100%;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            }
-            .rccs__card--front {
-                z-index: 20;
-            }
-            .rccs__card--back {
-                transform: rotateY(180deg);
-            }
-            .rccscard--back .rccsissuer {
-                background-position: bottom center;
-                bottom: 5%;
-                left: 50%;
-                opacity: 0.6;
-                right: auto;
-                top: auto;
-                transform: translateX(-50%);
-            }
-            .rccscardbackground {
-                height: 200%;
-                left: -170%;
-                position: absolute;
-                top: -60%;
-                transform: rotate(25deg);
-                transition: all 0.5s ease-out;
+a {
+    color: #23cc67;
+    text-decoration: none;
+}
 
-> Maria Eduarda:
-width: 150%;
-                left: -170%;
-            }
-            .rccs__card--flipped {
-                transform: rotateY(180deg);
-            }
-            .rccscard--flipped .rccscard--front {
-                z-index: 10;
-            }
-            .rccscard--flipped .rccscard--back {
-                z-index: 20;
-            }
-            .rccs__card--unknown > div {
-                background: linear-gradient(25deg, #999, #999);
-                box-shadow: none;
-            }
-            .rccscard--unknown .rccsissuer {
-                visibility: hidden;
-            }
-            .rccscard:not(.rccscard--unknown) .rccscardbackground {
-                left: -22%;
-            }
-            .rccscard--amex .rccscard__background {
-                background: linear-gradient(25deg, #308c67, #a3f2cf);
-            }
-            .rccscard--amex .rccsissuer {
-                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBjeD0iMTcuNTQxJSIgY3k9IjE3LjQ2NiUiIGZ4PSIxNy41alIiIGZ5PSIxNy40NjYlIigcj0iOTEuMjM3JSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiM2NUJDRjEiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjMjNBREUzIiBvZmZzZXQ9IjQ1LjQ2JSIvPjxzdG9wIHN0b3AtY29sb3I9IiMwREE2RTAiIG9mZnNldD0iNTAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzA1NTFDMyIgb2Zmc2V0PSIxMDAlIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGg1MTJ2NTEyaC01MTJ6Ii8+PHBhdGggZD0iTTQ1Ljc5MSAyMjAuOTM1bC05Ljc3My0yMy44MTMtOS43MTcgMjMuODEzaDE5LjQ4OXptMjE1LjI4OS05LjQ4M2MtMS45NjIgMS4xOTEtNC4yODMgMS4yMzEtNy4wNjMgMS4yMzFoLTE3LjM0NXYtMTMuMjY4aDE3LjU4MWMyLjQ4OCAwIDUuMDg0LjExMiA2Ljc3MSAxLjA3NyAxLjg1Mi44NyAyLjk5OCAyLjcyMiAyLjk5OCA1LjI4MSAwIDIuNjExLTEuMDkgNC43MTItMi45NDIgNS42Nzl6bTEyMy43MzkgOS40ODNsLTkuODgxLTIzLjgxMy05LjgyNyAyMy44MTnoMTkuNzA3em0tMjMwLjY1OCAyNS43NzZoLTE0LjYzN2wtLjA1NC00Ni43ODQtMjAuNzA0IDQ2Ljc4NGgtMTIuNTM2bC0yMC43NTgtNDYuODI1djQ2LjgyNWgtMjkuMDRsLTUuNDg2LTEzLjMyNGgtMjkuNzI5bC01LjU0MiAxMy4zMjRoLTE1Uw0KZXBsYWNlZCINCjwvcmVzdWx0Pg=="); /* (Trecho preservado conforme o código original) */
-            }
-            .rccscard--amex .rccscvc__front {
-                opacity: 0.5;
-                visibility: visible;
-            }
-            .rccscard--dankort .rccscard__background {
-                background: linear-gradient(25deg, #ccc, #999);
-            }
-            .rccs__card--dinersclub > div {
-                color: #555;
-            }
-            .rccscard--dinersclub .rccscard__background {
-                background: linear-gradient(25deg, #fff, #eee);
-            }
-            .rccs__card--discover > div {
-                color: #555;
-            }
-            .rccscard--discover .rccscard__background {
-                background: linear-gradient(25deg, #fff, #eee);
-            }
-            .rccscard--elo .rccscard__background {
-                background: linear-gradient(25deg, #211c18, #aaa7a2);
-            }
-            .rccscard--hipercard .rccscard__background {
-                background: linear-gradient(25deg, #8b181b, #de1f27);
-            }
-            .rccscard--jcb .rccsissuer {
-                background-image: url("...dados svg...");
-            }
-            .rccscard--laser .rccsissuer {
-                background-image: url("...dados svg...");
-            }
+a:hover {
+    text-decoration: underline;
+}
