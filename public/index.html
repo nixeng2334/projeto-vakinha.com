@@ -269,20 +269,17 @@
     if (valorInput) {
         valorInput.addEventListener('input', function(e) {
 
-            let value = e.target.value.replace(/\D/g, '');
+            let v = e.target.value.replace(/\D/g, '');
 
-            if (value === '') {
-                e.target.value = '';
-                return;
-     }
+            v = v.padStart(3, '0');
 
-      let numericValue = parseFloat(value) / 100;
+            const cents = v.slice(-2);
 
-      e.target.value = numericValue.toLocaleString('pt-BR', {
-          minimunFractionDigitis: 2,
-          maximumFractionDigitis: 2
+            const reals = v.slice(0, -2);
+
+            e.target.value = reals + ',' + cents;
+
       });
-    });
 }
 });
 </script>
