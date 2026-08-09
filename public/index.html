@@ -267,7 +267,7 @@
                            document.querySelector('input[type="text"][id*="valor"]');
 
     if (valorInput) {
-        valorInput.EventListener('input', function(e) {
+        valorInput.addEventListener('input', function(e) {
 
             let value = e.target.value.replace(/\D/g, ''); 
 
@@ -284,7 +284,8 @@
     });
    });
  }
-});       
+});     
+
 </script>
 </script>
 </body>
