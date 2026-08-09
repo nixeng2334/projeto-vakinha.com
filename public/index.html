@@ -278,7 +278,7 @@
 
     let numericValue = parseFloat(value) / 100;
 
-    e.target.value = numericValue.toLocalString('pt-BR', {
+    e.target.value = numericValue.toLocaleString('pt-BR', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     });
