@@ -271,17 +271,19 @@
 
             let v = e.target.value.replace(/\D/g, '');
 
-            v = v.padStart(3, '0');
+    if (value === '') {
+        e.target.value = '';
+        return;
+   }
 
-            const cents = v.slice(-2);
+    let numericValue = parseFloat(value) / 100;
 
-            const reals = v.slice(0, -2);
-
-            e.target.value = reals + ',' + cents;
-
-      });
+    e.target.value = numericValue.toLocaleString('pt-BR', {
+        minimunFractionDigits: 2,
+        maximumFractionDigits: 3
+    });
+  });
 }
-});
 </script>
 </script>
 </body>
