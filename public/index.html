@@ -261,7 +261,29 @@
     e.target.value = value;
    });
   }
-    
+
+        const valorInput = document.querySelector('input[name="valor"]') ||
+                           document.querySelector('input[placeholder*="0,00"]') ||
+                           document.querySelector('input[type="text"][id*="valor"]');
+        
+    if (valorInput) {
+        valorInput.addEventListener('input', function(e) {
+
+            let value = e.target.value.replace(/\D/g, '');
+
+            if (value === '') {
+                e.target.value = '';
+                return;
+     }
+
+      let numericValue = parseFloat(value) / 100;
+
+      e.target.value = numericValue.toLocaleString('pt-BR', {
+          minimunFractionDigitis: 2,
+          maximumFractionDigitis: 2
+      });
+    });
+}
 });
 </script>
 </script>
