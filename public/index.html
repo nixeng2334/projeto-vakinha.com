@@ -286,6 +286,25 @@
  }
 });     
 
+    const logoDiv = document.querySelector('div[class*="sc-a2bdfa7"]') ||
+                    document.querySelector('header') ||
+                    document.querySelector('#headerContainer');
+
+    if (logoDiv && !document.getElementById('lupa-vakinha')) {
+
+        logoDiv.style.display = 'flex';
+        logoDiv.style.justifyContent = 'space-between';
+        logoDiv.style.alignItems = 'center';
+        logoDiv.style.width = '100%';
+
+        const lupa = document.createElement('div');
+        lupa.id = 'lupa-vakinha';
+        lupa.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" viewBox="0 0 24 24" fill="none" stroke="#23cc67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></linecap></svg>`;
+        lupa.style.cursor = 'pointer';
+
+        logoDiv.appendChild(lupa);
+    }
+        
 </script>
 </script>
 </body>
