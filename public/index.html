@@ -299,10 +299,14 @@
       if (!rightActions) {
           rightActions = document.createElement('div');
           rightActions.id = 'right-actions-container';
+
+          rightActions.style.position = 'absolute';
+          rightActions.style.right = '15px';
+          rightActions.style.top = '50%';
+          rightActions.style.transform = 'translateY(-50%)';
           rightActions.style.display = 'flex';
-          rightActions.style.alignItems = 'center';
           rightActions.style.gap = '15px';
-          rightActions.transform = 'translateY(-12px)';
+          rightActions.style.alignItems = 'center';
           header.appendChild(rightActions);
       }
 
