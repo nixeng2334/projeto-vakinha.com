@@ -164,11 +164,3 @@ header::after,
     height: 22px !important;
     cursor: pointer !important;
 }
-
-.sc-a2bdfa7-0,
-#headerContainer,
-div[class*="sc-a2bdfa7"] {
-    max-width: 0 !important;
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-}
