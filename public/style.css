@@ -134,6 +134,8 @@ div[class*="sc-a2bdfa7"] {
     margin-bottom: 25px !important;
     width: 100% !important;
     display: block !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
 }
 
 header,
