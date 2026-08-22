@@ -194,3 +194,30 @@ div[class*="sc-a2bdfa7"]{
 #right-actions-container {
     margin-top: -17px !important;
 }
+
+.meta-progresso-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+.progress-ring .ring-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 4;
+}
+
+.progress-ring .ring-fill {
+    fill: none;
+    stroke: #23cc67;
+    stroke-width: 4;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.progress-text {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #555555 !important;
+}
