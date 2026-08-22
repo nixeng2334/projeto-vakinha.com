@@ -201,19 +201,23 @@ div[class*="sc-a2bdfa7"]{
     gap: 5px !important;
 }
 
+.progress-ring {
+    overflow: visible;
+}
+
 .progress-ring .ring-bg {
     fill: none;
     stroke: #e6e6e6;
-    stroke-width: 4;
+    stroke-width: 4px;
 }
 
 .progress-ring .ring-fill {
     fill: none;
     stroke: #23cc67;
-    stroke-width: 4;
+    stroke-width: 4px;
     stroke-linecap: round;
     transform: rotate(-90deg);
-    transform-origin: 50% 50%;
+    transform-origin: center;
 }
 
 .progress-text {
