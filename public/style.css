@@ -208,13 +208,13 @@ div[class*="sc-a2bdfa7"]{
 .progress-ring .ring-bg {
     fill: none;
     stroke: #e6e6e6;
-    stroke-width: 4px;
+    stroke-width: 5;
 }
 
 .progress-ring .ring-fill {
     fill: none;
     stroke: #23cc67;
-    stroke-width: 4px;
+    stroke-width: 5;
     stroke-linecap: round;
     transform: rotate(-90deg);
     transform-origin: center;
