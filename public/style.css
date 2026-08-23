@@ -289,3 +289,54 @@ label {
     font-size: 1.1rem;
     color: #2b2b2b;
 }
+
+.promo-inner-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card-icon {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.card-title-row strong {
+    font-size: 0.95rem;
+    color: #2b2b2b;
+}
+
+.badge-free {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+.card-price {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: #555555;
+    line-height: 1.3;
+}
