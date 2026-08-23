@@ -239,10 +239,3 @@ label {
     margin-top: 4px !important;
     color: #4a4a4a !important;
 }
-
-input[type="checkbox"] {
-    accent-color: #27ae67 !important;
-    width: 18px !important;
-    height: 18px !important;
-    cursor: pointer;
-}
