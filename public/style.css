@@ -239,3 +239,53 @@ label {
     margin-top: 4px !important;
     color: #4a4a4a !important;
 }
+
+.green-promo-card {
+    background-color: #eaf8e6;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    color: #2b2b2b;
+}
+
+.promo-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 12px;
+}
+
+.promo-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 12px;
+}
+
+.promo-checkbox-label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.promo-checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    accent-color: #27ae60;
+    cursor: pointer;
+}
+
+.custom-text-placeholder {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.promo-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2b2b2b;
+}
