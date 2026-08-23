@@ -225,3 +225,17 @@ div[class*="sc-a2bdfa7"]{
     font-weight: 600 !important;
     color: #555555 !important;
 }
+
+label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: pointer;
+}
+
+.sc-fqkvVR.iPSKBg {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin-top: 4px !important;
+    color: #4a4a4a !important;
+}
