@@ -344,3 +344,27 @@ label {
     color: #555555;
     line-height: 1.3;
 }
+
+/* Container dos ícones sobrepostos */
+.clover-coin-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: block !important;
+}
+
+.clover-coin-icon .clover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.clover-coin-icon .coin {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.1rem;
+    z-index: 1;
+}
