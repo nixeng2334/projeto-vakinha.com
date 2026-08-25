@@ -289,9 +289,9 @@ label {
 }
 
 .promo-price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #2b2b2b;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    color: #333333 !important;
 }
 
 .promo-inner-card {
