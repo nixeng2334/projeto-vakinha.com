@@ -279,9 +279,13 @@ label {
 }
 
 .custom-text-placeholder {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #2b2b2b;
+    background-color: #00c853;
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: incline-block;
 }
 
 .promo-price {
