@@ -359,6 +359,8 @@ label {
     left: -2px;
     font-size: 1.3rem;
     z-index: 2;
+    display: incline-block;
+    transform: rotate(-20deg);
 }
 
 .clover-coin-icon .coin {
@@ -367,4 +369,6 @@ label {
     right: 2px;
     font-size: 1.1rem;
     z-index: 1;
+    display: incline-block;
+    transform: rotate(45deg) scaleY(0.7);
 }
