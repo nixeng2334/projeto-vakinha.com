@@ -395,11 +395,12 @@ label {
 .heart-sticker::after {
     content: '';
     position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 7px;
-    height: 7px;
+    top: 2px;
+    right: 2px;
+    width: 9px;
+    height: 9px;
     background: #c8c8c8;
-    border-bottom-left-radius: 4px;
-    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 4px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.25);
 }
