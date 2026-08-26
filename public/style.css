@@ -360,7 +360,7 @@ label {
     font-size: 1.3rem;
     z-index: 2;
     display: incline-block;
-    transform: scaleX(-1) rotate(-30deg);
+    transform: scaleX(-1) rotate(-35deg);
 }
 
 .clover-coin-icon .coin {
