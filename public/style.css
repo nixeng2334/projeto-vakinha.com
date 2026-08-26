@@ -370,5 +370,5 @@ label {
     font-size: 1.1rem;
     z-index: 1;
     display: incline-block;
-    transform: rotate(-25deg) skewX(-20deg) scaleY(0.75);
+    transform: rotate(-25deg) skewX(-20deg) scaleY(0.65);
 }
