@@ -306,12 +306,11 @@ label {
 }
 
 .card-icon {
+    font-size: 1.4rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
 }
 
 .card-content {
@@ -388,7 +387,6 @@ label {
     align-items: center;
     justify-content: center;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.12);
-    flex-shrink: 0;
 }
 
 .heart-sticker .heart-icon {
