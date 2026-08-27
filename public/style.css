@@ -376,8 +376,8 @@ label {
 /* Container do adesivo redondo */
 .heart-sticker {
     position: relative;
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     background: radial-gradient(circle at 30% 35%, #ffffff 0%, #e2e2e2 100%);
     border-radius: 50%;
     display: flex;
@@ -387,7 +387,7 @@ label {
 }
 
 .heart-sticker .heart-icon {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     z-index: 1;
     margin-top: 1px;
 }
@@ -397,8 +397,8 @@ label {
     position: absolute;
     top: 1px;
     right: 1px;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     background: #c8c8c8;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 4px;
