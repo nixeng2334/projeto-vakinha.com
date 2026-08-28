@@ -321,6 +321,7 @@ label {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4px;
+    width: 100%
 }
 
 .card-title-row strong {
@@ -336,6 +337,8 @@ label {
 .card-price {
     font-size: 0.85rem;
     color: #666666;
+    margin-left: auto;
+    white-space: nowrap;
 }
 
 .card-content p {
