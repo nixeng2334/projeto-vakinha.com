@@ -313,18 +313,18 @@ label {
 }
 
 .card-content {
-    flex: 1;
-    width: 100%;
+    flex: 1 !important;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
 }
 
 .card-title-row {
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
     align-items: center;
     margin-bottom: 4px;
-    width: 100%
+    width: 100% !important;
 }
 
 .card-title-row strong {
