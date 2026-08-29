@@ -314,6 +314,7 @@ label {
 
 .card-content {
     flex: 1 !important;
+    min-width: 0 !important;
     width: 100% !important;
     display: flex;
     flex-direction: column;
