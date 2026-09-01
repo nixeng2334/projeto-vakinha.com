@@ -326,6 +326,7 @@ label {
     align-items: flex-start !important;
     margin-bottom: 4px;
     width: 100% !important;
+    flex: 1 !important;
 }
 
 .card-title-row strong {
