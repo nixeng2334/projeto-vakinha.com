@@ -302,6 +302,8 @@ label {
     display: flex;
     align-items: center;
     gap: 12px;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .card-icon {
@@ -313,7 +315,7 @@ label {
 }
 
 .card-content {
-    flex: 1 !important;
+    flex: 1 1 auto !important;
     min-width: 0 !important;
     width: 100% !important;
     display: flex;
