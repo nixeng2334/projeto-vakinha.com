@@ -323,7 +323,8 @@ label {
 }
 
 .card-title-row {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
     justify-content: space-between !important;
     align-items: flex-start !important;
     margin-bottom: 4px;
@@ -334,6 +335,7 @@ label {
 .card-title-row strong {
     font-size: 0.95rem;
     color: #2b2b2b;
+    white-space: nowrap !important;
 }
 
 .badge-free {
