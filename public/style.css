@@ -325,10 +325,9 @@ label {
 .card-title-row {
     display: flex !important;
     justify-content: space-between !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     margin-bottom: 4px;
     width: 100% !important;
-    flex: 1 !important;
 }
 
 .card-title-row strong {
