@@ -323,8 +323,8 @@ label {
 }
 
 .card-title-row {
-    display: flex !important;
-    justify-content: space-between !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
     align-items: center !important;
     margin-bottom: 4px;
     width: 100% !important;
@@ -344,7 +344,7 @@ label {
     font-size: 0.95rem !important;
     font-weight: 400 !important;
     color: #666666 !important;
-    margin-left: auto !important;
+    text-align: right !important;
     white-space: nowrap !important;
 }
 
