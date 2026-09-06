@@ -415,3 +415,7 @@ label {
     border-top-right-radius: 4px;
     box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.25);
 }
+
+.promo-inner-card, .card-content, .card-tittle-row {
+    outline: 1px solid red !important;
+}
