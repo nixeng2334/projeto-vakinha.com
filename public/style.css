@@ -320,7 +320,7 @@ label {
     width: 100% !important;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
 .card-title-row {
