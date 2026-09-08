@@ -420,3 +420,8 @@ label {
 .promo-inner-card, .card-content, .card-tittle-row {
     outline: 1px solid red !important;
 }
+
+/* Puxa o bloco do texto do primeiro card para esquerda */
+.promo-inner-card:first-child . card-content {
+    margin-left: -6px !important;
+}
