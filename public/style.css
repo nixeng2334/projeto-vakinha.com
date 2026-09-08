@@ -422,6 +422,6 @@ label {
 }
 
 /* Puxa o bloco do texto do primeiro card para esquerda */
-.promo-inner-card .card-content p {
+.promo-inner-card .card-content {
     margin-left: -16px !important;
 }
