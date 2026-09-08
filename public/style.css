@@ -423,5 +423,5 @@ label {
 
 /* Puxa o bloco do texto do primeiro card para esquerda */
 .promo-inner-card:first-child . card-content {
-    margin-left: -6px !important;
+    margin-left: -16px !important;
 }
