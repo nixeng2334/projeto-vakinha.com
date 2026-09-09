@@ -425,3 +425,7 @@ label {
 .promo-inner-card:first-child .card-content {
     margin-left: -6px !important;
 }
+
+.card-top {
+    margin-left: 6px !important;
+}
