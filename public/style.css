@@ -430,3 +430,14 @@ label {
 .card-top {
     margin-left: -10px !important;
 }
+
+/* força o container do botao a ter fundo branco */
+.sc-gEVEer {
+    background-color: #ffffff !important;
+    padding-top: 15px !important;
+}
+
+/* evita que o fundo verde vaze para fora */
+form {
+    background-color: transparent !important;
+}
