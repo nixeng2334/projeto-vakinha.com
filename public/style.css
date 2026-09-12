@@ -248,6 +248,7 @@ label {
     margin-bottom: 20px !important;
     font-family: Arial, sans-serif;
     color: #2b2b2b;
+    overflow: hidden !important;
 }
 
 .promo-header {
@@ -431,13 +432,7 @@ label {
     margin-left: -10px !important;
 }
 
-/* força o container do botao a ter fundo branco */
-.sc-gEvEer eWGeoZ {
-    background-color: #ffffff !important;
-    padding-top: 15px !important;
-}
-
-/* evita que o fundo verde vaze para fora */
-form {
-    background-color: transparent !important;
+/* força o botão e o elemento abaixo a terem fundo transparente/branco */
+button[type="submit"] {
+    margin-top: 15px !important;
 }
