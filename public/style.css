@@ -436,3 +436,21 @@ label {
 button[type="submit"] {
     margin-top: 15px !important;
 }
+
+/* 1. corrige o nome exato da classe do botao e força fundo branco */
+.sc-gEvEer,
+.sc-eqUAAY,
+.sc-dhKdcB {
+    background-color: #ffffff !important;
+    padding-top: 10px !important;
+}
+
+/* 2. garante que o fundo da pagina seja branco */
+form, body {
+    background-color: #ffffff !important;
+}
+
+/* 3. mantem o verde exclusivo na caixa dos cards promo */
+.green-promo-card {
+    background-color: #eaf8e6 !important;
+}
