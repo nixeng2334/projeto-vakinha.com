@@ -453,4 +453,7 @@ form, body {
 /* 3. mantem o verde exclusivo na caixa dos cards promo */
 .green-promo-card {
     background-color: #eaf8e6 !important;
+    border-radius: 16px !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 24px !important;
 }
