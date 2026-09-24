@@ -457,3 +457,17 @@ form, body {
     padding-bottom: 20px !important;
     margin-bottom: 24px !important;
 }
+
+/* Limita o fundo verde apenas ao card e empurra o botao pra baixo */
+.green-promo-card {
+    background-color: #eaf8e6 !important;
+    border-radius: 16px !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 24px !important;
+}
+
+/* garante que o fundo da seçao abaixo do card seja branco */
+.sc-gEvEer {
+    background-color: #ffffff !important;
+    padding-top: 0 !important;
+}
